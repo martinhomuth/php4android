@@ -1,0 +1,40 @@
+#+TITLE: Project Plan Summary
+#+AUTHOR: Martin Homuth
+#+DATE: <2016-09-20 Tue>
+
+Project: A Discipline for Software Engineering
+Program: 1A
+Language: C
+
+|---------------------+------+--------+---------+-----------|
+| Time in Phase (min) | Plan | Actual | To Date | To Date % |
+|---------------------+------+--------+---------+-----------|
+| Planning            |   10 | 5      | 5       |           |
+| Design              |   30 | 15     | 15      |           |
+| Code                |   60 |        |         |           |
+| Compile             |   50 |        |         |           |
+| Test                |   40 |        |         |           |
+| Postmortem          |   20 |        |         |           |
+| ..Total             |  210 |        |         |           |
+|---------------------+------+--------+---------+-----------|
+| Defects Injected    |      | Actual | To Date | To Date % |
+|---------------------+------+--------+---------+-----------|
+| Planning            |      |        |         |           |
+| Design              |      |        |         |           |
+| Code                |      |        |         |           |
+| Compile             |      |        |         |           |
+| Test                |      |        |         |           |
+| ..Total Development |      |        |         |           |
+|---------------------+------+--------+---------+-----------|
+| Defects Removed     |      | Actual | To Date | To Date % |
+|---------------------+------+--------+---------+-----------|
+| Planning            |      |        |         |           |
+| Design              |      |        |         |           |
+| Code                |      |        |         |           |
+| Compile             |      |        |         |           |
+| Test                |      |        |         |           |
+| ..Total Development |      |        |         |           |
+| After Development   |      |        |         |           |
+|---------------------+------+--------+---------+-----------|
+
+
