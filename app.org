@@ -2,9 +2,133 @@
 #+AUTHOR: Martin Homuth
 #+DATE: <2016-12-18 Sun>
 
-* TODO Problem Description
+* DONE Problem Description
+  CLOSED: [2016-12-22 Thu 17:09]
+  :PROPERTIES:
+  :Effort:   20
+  :END:
+  :LOGBOOK:
+  - State "DONE"       from "STARTED"    [2016-12-22 Thu 17:09]
+  CLOCK: [2016-12-22 Thu 16:50]--[2016-12-22 Thu 17:09] =>  0:19
+  :END:
+
+  The book 'A Discipline for Software Development' suggests a
+  development process called 'personal software process' which
+  structures the development of software in different phases. It does
+  so by using tables to be filled out with specific information, such
+  as time logging and defect recording. Handling these tables can be
+  quite cumbersome and thus this project aims to provide an
+  Android application which removes the need to write information to
+  any other location. One of the problems of PSP is to know what
+  exactly is part of the current process step. This should be taken
+  care of by the app.
+
 * TODO Planning
 ** Program Requirements
+*** Prerequisites
+    Most important: Risk reduction!
+**** Clear statement of the problem to solve
+       - described in the users point of view
+
+**** Requirements Checklist
+***** Specific Functional Requirements [0/7]
+      - [ ] inputs
+       - source
+       - accuracy
+       - range of values
+       - frequency
+      - [ ] outputs
+       - destination
+       - accuracy
+       - range of values
+       - frequency
+      - [ ] output formats
+      - [ ] external hard-/software
+      - [ ] external communication interfaces
+       - handshaking
+       - error-checking
+       - communication protocols
+      - [ ] tasks the user wants to perform
+      - [ ] data
+       - used in each task
+       - resulting from each task
+***** Specific Nonfunctional (Quality) Requirements [0/7]
+      - [ ] response time
+	- from user's point of view
+	- specified for all necessary operations
+      - [ ] timing considerations
+	- processing time
+	- data transfer rate
+	- system throughput
+      - [ ] level of security
+      - [ ] reliability
+	- consequences of software failure
+	- vital information to prevent failure
+	- strategy for error detection and recovery
+      - [ ] minimum machine memory/disk space
+      - [ ] maintainability
+	- ability to adapt to changes in specific functionalities
+	- changes in operating environment
+	- changes in interfaces with other software
+      - [ ] definition of success/failure
+***** Requirements Quality [0/8]
+      - [ ] written in users language?
+      - [ ] each requirement avoid conflicts with other requirements?
+      - [ ] acceptable tradeoffs between competing attributes
+        specified?
+	- e.g. robustness vs. correctness
+      - [ ] requirements avoid specifying the design?
+      - [ ] consistent level of requirement detail?
+	- any requirement needs more/less detail?
+      - [ ] requirements clear enough to be handed to an independent group
+      - [ ] each item relevant to the problem/solution?
+	- can be traced to origin in problem environment
+      - [ ] each requirement testable?
+	- possible for independent testing to determine whether
+          requirement has been satisfied?
+      - [ ] all possible changes to requirements specified including
+        likelihood of each change?
+***** Requirements Completeness [0/3]
+      - [ ] areas of incoompleteness specified if information is not
+        available?
+      - [ ] requirements complete wrt. acceptable product if satisfied?
+      - [ ] comfortable with all requirements? impossibilities eliminated?
+**** Architecture Checklist
+***** Specific Architectural Topics [0/9]
+      - [ ] overall organization clear?
+	- including good architectural overview and justification
+      - [ ] major building blocks well defined?
+	- areas of responsibility
+	- interfaces to other building blocks
+      - [ ] requirements functions covered by enough building blocks?
+      - [ ] most critical classes described and justified?
+      - [ ] data design described and justified?
+      - [ ] database organization and content specified?
+      - [ ] all key business rules identified and impact described?
+      - [ ] strategy for user interface design described?
+      - [ ] user interface modularized?
+      - [ ] strategy for I/O handling described and justified?
+      - [ ] resource use estimates and resource management described
+        and justified?
+      - [ ] architecture's security requirements specified?
+      - [ ] space and speed budgets for each
+        class/subsystem/functionality area?
+      - [ ] description how scalability is achieved?
+      - [ ] strategy for internationalization/localization?
+      - [ ] coherent error-handling strategy provided?
+      - [ ] fault tolerance if needed described?
+      - [ ] technical feasibility of all system parts established?
+      - [ ] necessary buy-vs-build decisions included?
+***** General Architectural Quality [/]
+      - [ ] architecture accounts for all requirements?
+      - [ ] any part over-/underachieved?
+      - [ ] whole architecture hangs conceptually together?
+      - [ ] top-level design independent of machine and languages?
+      - [ ] motivations for all major decisions provided?
+
+
+
+
 ** Estimate Resources
 * TODO Development [0/4]
 ** TODO Design
