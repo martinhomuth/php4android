@@ -20,8 +20,9 @@
   quite cumbersome and thus this project aims to provide an
   Android application which removes the need to write information to
   any other location. One of the problems of PSP is to know what
-  exactly is part of the current process step. This should be taken
-  care of by the app.
+  exactly is part of the current process step and how to process from
+  a specific step. Normally it is required to have a look into the
+  process script file and also remember where to put the information.
 
 * TODO Planning
 ** Program Requirements
@@ -130,6 +131,8 @@
 
 
 ** Estimate Resources
+
+
 * TODO Development [0/4]
 ** TODO Design
 ** TODO Code
