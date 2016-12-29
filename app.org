@@ -24,13 +24,32 @@
   a specific step. Normally it is required to have a look into the
   process script file and also remember where to put the information.
 
-* TODO Planning
+* STARTED Planning
+  :PROPERTIES:
+  :Effort:   2:00
+  :END:
+  :LOGBOOK:
+  CLOCK: [2016-12-29 Thu 20:50]--[2016-12-29 Thu 20:53] =>  0:03
+  CLOCK: [2016-12-29 Thu 20:39]--[2016-12-29 Thu 20:50] =>  0:11
+  :END:
+
+  The following data shall be inserted into the app:
+  - always a time log button with the according phase
+  - problem description
+  - planning page
+    - requirements statement
+    - development estimates
+      - planning, design, code, compile, test, postmortem for time in
+        phase, defects injected and defects removed
+  - design page
+    * text input for the design -> most likely handled externally
+    * the time needed in this stage
+
 ** Program Requirements
 *** Prerequisites
     Most important: Risk reduction!
 **** Clear statement of the problem to solve
        - described in the users point of view
-
 **** Requirements Checklist
 ***** Specific Functional Requirements [0/7]
       - [ ] inputs
