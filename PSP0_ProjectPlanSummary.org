@@ -2,39 +2,40 @@
 #+AUTHOR: Martin Homuth
 #+DATE: <2016-09-20 Tue>
 
-Project: A Discipline for Software Engineering
-Program: 1A
-Language: C
+Project: PSP4Android
+Program: psp4android
+Language: Java
 
-|---------------------+------+--------+---------+-----------|
-| Time in Phase (min) | Plan | Actual | To Date | To Date % |
-|---------------------+------+--------+---------+-----------|
-| Planning            |   10 | 5      | 5       |           |
-| Design              |   30 | 15     | 15      |           |
-| Code                |   60 |        |         |           |
-| Compile             |   50 |        |         |           |
-| Test                |   40 |        |         |           |
-| Postmortem          |   20 |        |         |           |
-| ..Total             |  210 |        |         |           |
-|---------------------+------+--------+---------+-----------|
-| Defects Injected    |      | Actual | To Date | To Date % |
-|---------------------+------+--------+---------+-----------|
-| Planning            |      |        |         |           |
-| Design              |      |        |         |           |
-| Code                |      |        |         |           |
-| Compile             |      |        |         |           |
-| Test                |      |        |         |           |
-| ..Total Development |      |        |         |           |
-|---------------------+------+--------+---------+-----------|
-| Defects Removed     |      | Actual | To Date | To Date % |
-|---------------------+------+--------+---------+-----------|
-| Planning            |      |        |         |           |
-| Design              |      |        |         |           |
-| Code                |      |        |         |           |
-| Compile             |      |        |         |           |
-| Test                |      |        |         |           |
-| ..Total Development |      |        |         |           |
-| After Development   |      |        |         |           |
-|---------------------+------+--------+---------+-----------|
-
+| <30>                           |      |        |         |           |
+|--------------------------------+------+--------+---------+-----------|
+| Time in Phase (min)            | Plan | Actual | To Date | To Date % |
+|--------------------------------+------+--------+---------+-----------|
+| Planning                       |  120 |        |         |           |
+| Design                         |  120 |        |         |           |
+| Code                           |  360 |        |         |           |
+| Compile                        |  120 |        |         |           |
+| Test                           |  120 |        |         |           |
+| Postmortem                     |   30 |        |         |           |
+| Planning + Design + Code + Compile + Test + Postmortem |  870 | 0      | 0       | 0         |
+|--------------------------------+------+--------+---------+-----------|
+| Defects Injected               |      | Actual | To Date | To Date % |
+|--------------------------------+------+--------+---------+-----------|
+| Planning                       |      |        |         |           |
+| Design                         |      |        |         |           |
+| Code                           |      |        |         |           |
+| Compile                        |      |        |         |           |
+| Test                           |      |        |         |           |
+| Planning + Design + Code + Compile + Test |    0 | 0      | 0       | 0         |
+|--------------------------------+------+--------+---------+-----------|
+| Defects Removed                |      | Actual | To Date | To Date % |
+|--------------------------------+------+--------+---------+-----------|
+| Planning                       |      |        |         |           |
+| Design                         |      |        |         |           |
+| Code                           |      |        |         |           |
+| Compile                        |      |        |         |           |
+| Test                           |      |        |         |           |
+| ..Total Development            |      |        |         |           |
+| After Development              |      |        |         |           |
+|--------------------------------+------+--------+---------+-----------|
+#+TBLFM: @9=vsum(@3..@8)::@16=vsum(@11..@15)::@23=vsum($18..$22)
 
