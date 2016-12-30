@@ -29,21 +29,84 @@
   :Effort:   2:00
   :END:
   :LOGBOOK:
+  CLOCK: [2016-12-30 Fri 19:14]--[2016-12-30 Fri 19:56] =>  0:42
   CLOCK: [2016-12-29 Thu 20:50]--[2016-12-29 Thu 20:53] =>  0:03
   CLOCK: [2016-12-29 Thu 20:39]--[2016-12-29 Thu 20:50] =>  0:11
   :END:
 
   The following data shall be inserted into the app:
-  - always a time log button with the according phase
-  - problem description
-  - planning page
-    - requirements statement
-    - development estimates
-      - planning, design, code, compile, test, postmortem for time in
-        phase, defects injected and defects removed
-  - design page
-    * text input for the design -> most likely handled externally
-    * the time needed in this stage
+  - state of current phase
+  - time log in/out button
+  - phase complete button -> automatic transition
+  - phases
+    - problem description
+    - planning phase
+      - requirements statement -> e.g. list?
+      - collect time estimates in interactive question
+	- planning, design, code, compile, test, postmortem for time in
+          phase, defects injected and defects removed
+    - design phase
+      * text input for notes of the design
+    - code phase
+      - text input field for notes and such
+      - (git source code browser access)
+    - compile phase
+    - test phase
+    - postmortem phase (automatically filled, only for adjustments if necessary)
+  - large button for defect injected
+    - note time
+    - automatically provide defect number
+    - prompt for defect type
+  - large button for defect removed
+    - note time
+    - prompt for defect number
+    - prompt for fix time
+
+  Transition from phase to phase
+  - manual reselection of phase should be possible
+
+  Input:
+  - [optional] ProjectPlanSummary
+  - project name
+  - program
+  - language
+  - planning phase:
+    - text - by user in app or externally provided
+    - time estimates in minutes (1 to 9999)
+  - design phase:
+    - text - by user in app or externally provided
+  - code phase:
+    - text - by user in app or externally provided
+  - compile phase:
+    - text (notes)
+  - test phase:
+    - text (notes)
+  - postmortem phase
+    * time adjustments in minutes (1 to 9999)
+  - defect injected
+    - defect type (selection box)
+      #+BEGIN_EXAMPLE
+        Defect Types:
+           10 Documentation   60 Checking
+           20 Syntax          70 Data
+           30 Build, Package  80 Function
+           40 Assignment      90 System
+           50 Interface      100 Environment
+      #+END_EXAMPLE
+    - text
+  - defect removed
+    - fix time in minutes (1 to 9999)
+
+  Output:
+  - DefectRecordingLog
+  - TimeRecordingLog
+  - ProjectPlanSummary
+
+  All information above is stored in datatypes and exported to org
+  files via an exporter.  No external hard- or software is required so
+  far.  In the first version no external communication interfaces are
+  necessary. The nonfunctional quality requirements are discarded for
+  this project and considered in version 0.2
 
 ** Program Requirements
 *** Prerequisites
@@ -51,46 +114,46 @@
 **** Clear statement of the problem to solve
        - described in the users point of view
 **** Requirements Checklist
-***** Specific Functional Requirements [0/7]
-      - [ ] inputs
-       - source
-       - accuracy
-       - range of values
-       - frequency
-      - [ ] outputs
-       - destination
-       - accuracy
-       - range of values
-       - frequency
-      - [ ] output formats
-      - [ ] external hard-/software
-      - [ ] external communication interfaces
-       - handshaking
-       - error-checking
-       - communication protocols
-      - [ ] tasks the user wants to perform
-      - [ ] data
-       - used in each task
-       - resulting from each task
-***** Specific Nonfunctional (Quality) Requirements [0/7]
-      - [ ] response time
+***** Specific Functional Requirements [7/7]
+      - [X] inputs
+	- source
+	- accuracy
+	- range of values
+	- frequency
+      - [X] outputs
+	- destination
+	- accuracy
+	- range of values
+	- frequency
+      - [X] output formats
+      - [X] external hard-/software
+      - [X] external communication interfaces
+	- handshaking
+	- error-checking
+	- communication protocols
+      - [X] tasks the user wants to perform
+      - [X] data
+	- used in each task
+	- resulting from each task
+***** Specific Nonfunctional (Quality) Requirements [7/7]
+      - [X] response time
 	- from user's point of view
 	- specified for all necessary operations
-      - [ ] timing considerations
+      - [X] timing considerations
 	- processing time
 	- data transfer rate
 	- system throughput
-      - [ ] level of security
-      - [ ] reliability
+      - [X] level of security
+      - [X] reliability
 	- consequences of software failure
 	- vital information to prevent failure
 	- strategy for error detection and recovery
-      - [ ] minimum machine memory/disk space
-      - [ ] maintainability
+      - [X] minimum machine memory/disk space
+      - [X] maintainability
 	- ability to adapt to changes in specific functionalities
 	- changes in operating environment
 	- changes in interfaces with other software
-      - [ ] definition of success/failure
+      - [X] definition of success/failure
 ***** Requirements Quality [0/8]
       - [ ] written in users language?
       - [ ] each requirement avoid conflicts with other requirements?
