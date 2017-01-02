@@ -29,10 +29,15 @@
   :Effort:   2:00
   :END:
   :LOGBOOK:
+  CLOCK: [2017-01-02 Mon 20:26]--[2017-01-02 Mon 21:03] =>  0:37
   CLOCK: [2016-12-30 Fri 19:14]--[2016-12-30 Fri 19:56] =>  0:42
   CLOCK: [2016-12-29 Thu 20:50]--[2016-12-29 Thu 20:53] =>  0:03
   CLOCK: [2016-12-29 Thu 20:39]--[2016-12-29 Thu 20:50] =>  0:11
   :END:
+
+  The app should handle the PSP0 process and indicate intuitively what
+  options from the current step can be performed. This is illustrated
+  in the following diagram.
 
   The following data shall be inserted into the app:
   - state of current phase
@@ -154,14 +159,14 @@
 	- changes in operating environment
 	- changes in interfaces with other software
       - [X] definition of success/failure
-***** Requirements Quality [0/8]
-      - [ ] written in users language?
-      - [ ] each requirement avoid conflicts with other requirements?
-      - [ ] acceptable tradeoffs between competing attributes
+***** Requirements Quality [5/9]
+      - [X] written in users language?
+      - [X] each requirement avoid conflicts with other requirements?
+      - [X] acceptable tradeoffs between competing attributes
         specified?
 	- e.g. robustness vs. correctness
-      - [ ] requirements avoid specifying the design?
-      - [ ] consistent level of requirement detail?
+      - [X] requirements avoid specifying the design?
+      - [X] consistent level of requirement detail?
 	- any requirement needs more/less detail?
       - [ ] requirements clear enough to be handed to an independent group
       - [ ] each item relevant to the problem/solution?
